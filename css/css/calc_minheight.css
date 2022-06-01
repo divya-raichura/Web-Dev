@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+}
+
+.navbar{
+    background: forestgreen;
+    color: magenta;
+    font-size: 48px;
+    height: 100px;
+}
+
+.banner{
+    background: blue;
+    /* https: //stackoverflow.com/questions/42077726/what-is-the-difference-between-min-height-and-height-property */
+
+    /* This means the div will start at 100px,
+        if the content pushes the div beyond 100px it will continue growing. However if you have content that takes less than 100px it will still take 100px in space. */
+
+    /* as we have no content here written in the div of banner, we will have no height, but we want height, so we wrote min height, so tho there is no content, there will be empty content now with min 100px, simple words, isse niche height nai hoga, upar hoga toh chalega, niche hoga toh ye wala use hoga */
+
+    /* min-height: 100vh; */
+    
+
+    /* what happens is we want banner and navbar to occupy 100% screen together, but banner takes 100% and nav takes 100px, so we need to scroll down which we don't want, we want both together, so we subtract 100px from the 100vh (100vh is full 100% of any screen) */
+
+    min-height: calc(100vh - 100px);
+    /* now we don't need to scrool both are together taking 100% of the screen */
+}

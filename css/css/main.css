@@ -1,0 +1,90 @@
+/* external css */
+/* h1{ 
+    color: peru;
+}
+h2{
+    color:cadetblue;
+} */
+body {
+    color:blueviolet;
+}
+/* grouping */
+h1, h2 { 
+    color: brown;
+}
+/* but what if we have a para between two h1 and we want to give different styles to both h1 */
+/* we use id for that */
+
+/* note, everyone should have unique id, if we want to use same property for 2 elements, we use class not id, id shud be unique */
+#heading{
+    color: yellow;
+    background-color: black;
+}
+#footer{
+    color: blue;
+    background-color: black;
+}
+
+
+/* CLASS SELECTORS */
+.b {
+    color: blue;
+    background-color: black;
+}
+.r {
+    color: red;
+    background-color: grey;
+}
+#title{
+    color: darkgoldenrod;
+    font-size: 40px;
+}
+.lowercase{
+    text-transform: uppercase;
+}
+
+
+/* what div does basically, is it fills the space,hence we say it groups the elements, experiment karle samaj jayega */
+
+/* div{
+    color: red;
+    background-color: black;
+} */
+
+/* for div we start new line everytime, it is grouping at block level but span, nothing as such, span is for inline, when we want to group within the text and stuff */
+
+span{
+    text-transform: uppercase;
+}
+
+
+/* inheritance: if we add style to parent element, all the child elements will auto inherit all those properties untill we separately give style to those particular child elements */
+
+/* color and font in parent and color in child -> will use color of child and at the same time font of parent unless we mention font too in the child */
+
+/* last rule: if we have 2 selectors with same name and properties, css follows last rule, the last wala, ie latest one ka properties will be used, eg p{color:blue} and p{color:red} then red one will be used */
+
+
+
+/*
+specificity: 
+
+p has class="r"
+.r {
+    color: red
+}
+p{
+    color: blue
+}
+
+css will not use last rule, it will go with priority, class has more, so will style according to class
+https: //www.w3schools.com/css/css_specificity.asp
+*/
+
+/* universal selector:
+* {
+    color: blue
+}
+
+this has least priority
+*/

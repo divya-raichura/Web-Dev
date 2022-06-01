@@ -1,0 +1,50 @@
+/* 
+
+BLOCK: Top Bottom Margin Respected
+Inline: Top Bottom Margin Not Respected
+Mobile NavBar
+list-style-type: property (woh list me dots ke badle kya chahiye -> roman, box etc)
+descendant selectors
+
+*/
+
+
+
+/* div is block element so margin and padding respected */
+/* div{
+    background: black;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: black;
+    color: tomato;
+    /* now if we add padding and if we want margin between them */
+    padding: 10px;
+    /* margin: 10px 5px; */
+    /* we see that they overlap as the links are inline elements and the browser does not respect padding and margin(top and bottom for both) on them, hence we first convert them to block elements */
+    
+    display: block;
+    text-align: center;
+}
+/* so remember that for inline, top bottom margins are not respected */

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">home page</a>
+    <br>
+    <br>
+
+    <!-- when we submit, form gets submitted back to the same page as action is empty-->
+
+    <form action="" method="">
+        <!-- id will be used for label element and within the for attribute in label element we will use the id-->
+        <label for='name'>first name</label>
+        <!-- for should have same value as  id attribute of the input element we are targeting, here we are targeting name input, so the value of attribute for id ->'name' of input element name is same as the for attribute 'name'-->
+        <input type="text" name="naam" id="name">
+        <!-- label use: after clicking the 'first name', the box gets highlighted -->
+        <br>
+        <!-- <button type="submit">submit please</button> -->
+        <!-- <input type="submit"> -->
+
+        <br>
+        <p>password</p>
+        <input type="password"
+        placeholder="password">
+        <!-- placeholder "text" means woh type wale box me text lik ke ayega aur jaise hi usme type karenge text gayab hoga aur **** aisa symbols ayega -->
+
+        <br> 
+        <br>
+        <input type="email" name="" id="" value="email@gmail">
+        <br>
+        <!-- <input type="submit" value="submit please">          -->
+        
+        <br>
+        <br>
+        <p>Desciption</p>
+        <textarea name="" id="" cols="20" rows="10" placeholder="your desciption"></textarea>
+        <br>
+
+        <br>
+        <!-- name attribute of all the radio buttons you want to have should match kyuki ek hi select karne dena hai na alag name hoga toh alag kaam hoga-->
+        <input type="radio" name="coding" id="" value="java">Java
+        <input type="radio" name="coding" id="" value="javascript">Javascript
+        <input type="radio" name="coding" id="" value="python">python
+        <!-- - value attribute is basically what we will be sending as data, between > < is what is shown to the user -->
+        <br>
+        <!-- <input type="button" value="submit karo"> -->
+        <br>
+
+        <!-- remember, the name should match as they all belong to the same query 
+        value is what is submitted to the server-->
+        <p>select language</p>
+        <input type="checkbox" name="programming" id="" value="javascript"> Javascript
+        <input type="checkbox" name="programming" id="" value="Java" checked> Java
+        <input type="checkbox" name="programming" id="" value="python"> python
+
+        <!-- so,
+             radio buttons: choose only one checkbox: choose multiple
+            -->
+
+        <br>
+
+        <br>
+        <select name="languages" id="">
+            <option value="javascript">Javascript</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Submit the form">
+    </form>
+</body>
+</html>

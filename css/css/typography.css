@@ -1,0 +1,59 @@
+/* generic: serif, sans-serif, fantasy, monospace */
+
+/* body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.main{
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.subheading{
+    text-align: right;
+}
+
+.one{
+    text-align: left;
+    text-indent: 10rem;
+}
+
+.two{
+    text-align: left;
+    text-indent: 100px;
+} */
+
+
+/* 
+line height
+letter spacing
+word spacing
+text transform
+text decoration
+*/
+*{
+    text-transform: uppercase;
+}
+
+h1{
+    text-transform: lowercase;
+    text-decoration: line-through; /*draws a line cutting the letters*/
+}
+.one{
+    line-height: 2.6;
+}
+.two{
+    letter-spacing: 5px;
+    text-decoration: underline;
+}
+.three{
+    word-spacing: 20px;
+    line-height: 3rem;
+    text-decoration: overline;
+}
+
+a{
+    font-size: 40px;
+    text-decoration: none;  /*removes that line in the link*/
+}

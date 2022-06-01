@@ -1,0 +1,30 @@
+/* continue from boxModel.css */
+
+
+.buttons {
+    margin: 3rem;
+}
+
+a{
+    background: rgb(98, 188, 7);
+    text-decoration: none;
+    padding: 1.2rem 1.5rem;
+    color: red;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+#one {
+    border: 0.2rem solid black;
+}
+
+#two {
+    outline-width: 0.5rem;
+    outline-style: solid;
+    outline-color: blueviolet;
+    outline: 0.2rem solid white;
+    outline-offset: 10px;
+    outline-offset: -10px;  
+    /* can't do this with borders */
+}

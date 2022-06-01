@@ -1,0 +1,22 @@
+p {
+    background: blue;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+    color: burlywood;
+    background: tomato;
+}
+
+/* even tho all elements have 0 margin, tho we have space between screen and elements, this is  default due to the body and html elements, to remove this default margin, we use below two selectors*/
+
+/* body { */
+    /* margin: 0px; */
+/* } */
+/* *{
+    margin: 0px;
+} */

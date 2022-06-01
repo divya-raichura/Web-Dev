@@ -1,0 +1,75 @@
+/* Default Display Property 
+
+Block: Always starts a new line and takes full width
+Inline: Does not start and only take up as much as content space
+
+*/
+
+.block {
+    background: blue;
+    color: white;
+}
+
+.inline{
+    background: red;
+    color: white;
+}
+
+/* what we see is, block elements are taking whole space from start to end even tho they can be on same line but the inline elements are only taking as much space as required WHICH IS WHAT IS WRITTEN AT THE TOP */
+
+/* we can change all this using display property */
+
+/* .block {
+    background: blue;
+    color: white;
+    display: inline;
+}
+
+.inline {
+    background: red;
+    color: white;
+    display: block;
+} */
+
+
+
+/* HORIZONTAL CENTERING */
+.block {
+    background: blue;
+    color: white;
+}
+
+.inline {
+    background: red;
+    color: white;
+}
+body{
+    text-align: center;
+}
+/* inline elements got horizontally centred by just using text align but for block elements only the text got centred */
+
+.block{
+    background: blue;
+    color: white;
+    width: 150px;
+    margin: 0 auto;
+    /* to centre block elements we use above technique, note that we can write top bottom margin anything 0 50 100px but for left and right we write 'auto' */
+    
+}
+
+.block{
+    background: blue;
+    color: white;
+    width: 150px;
+    padding: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* so, to centre horizontally 
+inline: text align: centre in the parent element
+block: left and right margin: auto
+*/
+
+

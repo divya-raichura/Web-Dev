@@ -1,0 +1,96 @@
+/* h1{
+    font-size: 60px;
+    width: 200px;
+    height: 300px;
+    background: yellowgreen;
+} */
+
+
+/* nothing will happen with just inner(child) as this is inside the outer div so values in this inner div will be relative to outer div, so as we will change outer, inner values will change accordingly */
+/* so basically inner values are relative to outer*/
+.outer{
+    width: 200px;
+    height: 200px;
+    background: blue;
+}
+
+.inner{
+    width: 50%; /* width will be 50% of outer width and height will be x% of height in outer*/
+    height: 10%;
+    background: red;
+}
+
+.h3tag{
+    color:gold;
+    background: tomato;
+}
+
+/*
+
+em - RELATIVE depends on parent
+1em = 16px on default browser style;
+1em = base value
+
+*/
+
+/* they both have same size, how?
+the parent element for relative class is body and for body default fontsize in browser is 16px and this is 1em in this case and as 2em = 16*2=32px, the size is same, but if we change settings in "browser" to increase size, now the relative will become larger
+*/
+.relative{
+    font-size: 2em;
+}
+.absolute{
+    font-size: 32px;
+}
+div{
+    font-size: 10px;
+}
+
+/* now when they are inside div, and we gave div a different font size then, now they will follow div default size not of body, so em follows that parent has base size of 10px, so 1 em = 10px, so now relative is 2*10=20px which is smaller than absolute as the absoute does not care, it is still 32px*/
+
+/* so the em values depend on the parent container */
+
+
+/* 
+
+rem -  RELATIVE depends on root
+1rem - 16px default browser style
+
+*/
+
+/*
+
+so rem means it is like em but instead of parent like div or body, it depends on the root of document, here it is html, so if we do
+html {
+    change size to 32px (it is 16 bydefault)
+}
+then this will change rem from 16px to 64px as 1rem = 32px now
+
+
+now this was code part, in both rem or em if user changes browser settings to larger the font, the "16px" will be increased suppose to 32px, so now 1em=1rem=32px 
+*/
+
+
+
+
+
+/* 
+these units change according to the screen size
+suppose width is 50vw then it will be always 50 relative to the screen size either we increase or decrease screen size
+vh - height - percent of the screen
+vw - width - percent of the screen
+
+*/
+
+.header{
+    width: 50vw;
+    height: 50vh;
+    background: red;
+}
+
+.banner{
+    width: 100vw;
+        height: 100vh;
+        background: blue;
+}
+ 

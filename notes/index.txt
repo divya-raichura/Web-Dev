@@ -1,0 +1,5 @@
+- doctype html contains html version
+- html root element wraps code of page and contains one head and body element
+- head contains info about page -> meta, links to resources like js, css etc, title, 
+- head element contains info about the page and will not be visible on the pg that is being rendered
+- body -> what will be displayed on pg

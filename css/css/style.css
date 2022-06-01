@@ -1,0 +1,26 @@
+#one{
+    color: rgb(0, 0, 0);
+    background: rgb(55,55, 55);
+}
+#two{
+    color: rgb(36, 77, 68);
+    background: rgb(155, 55, 55);
+}
+#three{
+    color: rgb(101, 150, 250);
+    background: rgb(10, 1, 10);
+}
+#four{
+    color: bisque;
+    background: rgb(98, 50, 114);
+}
+body{
+    background: tomato;
+    color: aquamarine;
+}
+
+/* we use 'rgba' for transparancy */
+#three {
+    color: rgb(101, 150, 250);
+    background: rgba(10, 1, 10, 0.4);
+}

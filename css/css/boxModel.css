@@ -1,0 +1,93 @@
+/* 
+padding
+
+margin
+
+border
+
+border radius
+
+negative margin -> in this case two elements  will overlap
+
+outline
+
+offset
+*/
+
+h1{
+    background: red;
+    /* padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 25px;
+    padding-right: 50px; */
+
+    padding:20px;
+
+    /* same with margins */
+    /* margin-right: 50px;
+    margin-bottom: 0px;   */
+    /* still we have space in between h1 and p, this is because of p element's margin top, make it zero too */
+
+    /* shortcut way is to make *{margin = 0} 
+    so it will do zero for all unless we define specifically
+    */
+
+    margin: 30px;
+
+
+    border-style: solid;
+    border-width: 10px;
+    border-color: blue;
+     
+
+
+
+}
+
+/* *{
+    margin: 0;
+} */
+
+p{
+    background: blue;
+    padding: 50px; 
+    /* same padding to all sides */
+
+    /* padding: 30px 60px; */
+    /* top and bottom 30 left and right 60 */
+
+    /* padding: 20px 40px 60px 10px; */
+    /* top right bottom left */
+
+    /* margin-top: 0px; */
+    /* margin: 50px 20px; */
+    /* so margin 0 rakha toh margin 0 hoga warna value increase hogi waise woh bhi increase hoga */
+
+    /* margin: 0px; */
+
+    margin-top: 100px;
+    border: 13px solid green ;
+
+    border-radius: 50%;
+}
+
+h2{
+    background: tomato;
+    padding: 20px;
+    margin-top: 0px;
+    border-bottom-style: dashed;
+    border-width: 5px;
+    border-bottom-color: blueviolet;
+    
+    
+}
+
+
+h3{
+    background: blueviolet;
+    padding: 30px;
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+
