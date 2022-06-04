@@ -19,54 +19,64 @@ Inline: Does not start and only take up as much as content space
 
 /* we can change all this using display property */
 
-/* .block {
-    background: blue;
-    color: white;
-    display: inline;
-}
-
-.inline {
-    background: red;
-    color: white;
-    display: block;
-} */
-
-
-
-/* HORIZONTAL CENTERING */
 .block {
     background: blue;
     color: white;
+    /* display: inline; */
+    /* text-align: center; */
+    margin: 0px auto;
+}
+
+.inline {
+    background: red;
+    color: white;
+    /* display: block; */
+    /* margin: 0px auto; */
+    /* text-align: center; */
+    /* text align does not work in class, use body selector */
+}
+/* body{
+    text-align: center;
+} */
+
+
+/* HORIZONTAL CENTERING */
+body {
+    text-align: center;
+}
+.block {
+    background: blue;
+    color: white;
+    margin: 0px auto;
+    width: 350px;
 }
 
 .inline {
     background: red;
     color: white;
 }
-body{
-    text-align: center;
-}
 /* inline elements got horizontally centred by just using text align but for block elements only the text got centred */
-
-.block{
+/*
+ .block{
     background: blue;
     color: white;
     width: 150px;
     margin: 0 auto;
-    /* to centre block elements we use above technique, note that we can write top bottom margin anything 0 50 100px but for left and right we write 'auto' */
+   /* to centre block elements we use above technique, note that we can write top bottom margin anything 0 50 100px but for left and right we write 'auto' */
     
-}
+ /* }  */
 
-.block{
+
+/* .block{
     background: blue;
-    color: white;
+    color: black;
     width: 150px;
     padding: 20px;
     margin-top: 2px;
     margin-bottom: 2px;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 /* so, to centre horizontally 
 inline: text align: centre in the parent element
 block: left and right margin: auto

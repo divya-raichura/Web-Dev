@@ -33,6 +33,10 @@ ul li {
     list-style-type: none;
 }
 
+/* body{
+    text-align: center;
+} */
+
 ul li a{
     text-decoration: none;
     text-transform: capitalize;
@@ -41,10 +45,11 @@ ul li a{
     color: tomato;
     /* now if we add padding and if we want margin between them */
     padding: 10px;
+    /* width: 250px; */
     /* margin: 10px 5px; */
     /* we see that they overlap as the links are inline elements and the browser does not respect padding and margin(top and bottom for both) on them, hence we first convert them to block elements */
     
     display: block;
-    text-align: center;
+    /* text-align: center; */
 }
 /* so remember that for inline, top bottom margins are not respected */

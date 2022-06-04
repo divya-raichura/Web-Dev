@@ -1,0 +1,24 @@
+*{
+    height: 200px;
+    width: 200px;
+    color: black;
+}
+
+.box1 {
+    background: red;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.box2 {
+    background: blue;
+}
+
+.box3 {
+    padding: 60px;
+    background: green;
+}
+
+/* border box applies padding inside
+the default one adds up padding and border outside
+*/

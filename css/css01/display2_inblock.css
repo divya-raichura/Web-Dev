@@ -1,0 +1,13 @@
+ /* INLINE BLOCK */
+
+ a {
+     font-size: 50px;
+     background: tomato;
+     text-decoration: none;
+     margin: 60px;
+     /* this margin is added only left and right NOT UP AND DOWN AS THIS IS INLINE ELEMENT SO BROWSER IGNORES UP AND DOWN */
+     display: inline-block;
+     /* so we can add margins up down by using display: block but... */
+     /* if we dont want element to be block(so as to not spread across) but we want top bottom margin, we can use inline-block */
+
+ }

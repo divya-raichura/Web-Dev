@@ -1,0 +1,90 @@
+.banner {
+    border: 5px solid rebeccapurple;
+    padding: 10px;
+    overflow: hidden;
+}
+
+img {
+    float: right;
+    margin: 10px 20px;
+    width: 100px;
+}
+
+/* example 2 */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  float: left;
+  height: 200px;
+  width: 33.33%;
+}
+
+.one {
+  background: rebeccapurple;
+}
+.two {
+  background: blue;
+}
+.three {
+  background: tomato;
+}
+h1 {
+  clear: both;
+} */
+
+/* example 3 */
+/* positions */
+/* static position is the default one */
+/* div {
+  border: 5px solid rebeccapurple;
+  background: yellow;
+  margin-top: 40px;
+}
+
+.one {
+  position: relative;
+  top: 60px;
+  left: 20rem;
+  background: blue;
+}
+.two {
+  background: tomato;
+}
+.special {
+  background: deepskyblue;
+  font-size: 20px;
+} */
+
+
+/* example 4 */
+div {
+  border: 5px solid rebeccapurple;
+  background: yellow;
+  margin-top: 40px;
+}
+.one {
+  background: blue;
+}
+.two {
+  background: tomato;
+  position: relative;
+}
+.special {
+  background: deepskyblue;
+  font-size: 20px;
+  position: absolute;
+  top: 200px;  
+  /* absoulte means it will have position relative to the nearest parent having relative position property
+  here no one have it so it uses body tag as parent */
+}
+button{
+    background: red;
+    font-size: 40px;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+}

@@ -1,0 +1,69 @@
+/* to bottom is default value for linear gradient*/
+
+/* div {
+    margin: 5px;
+    height: 350px;
+    width: 300px;
+} */
+
+/* .one{
+    background: linear-gradient(red, blue);
+}
+
+.two {
+    background: linear-gradient(to top right, red, blue, yellow, rgb(98, 0, 128), rgb(0, 255, 229));
+}
+
+.three{
+    background: linear-gradient(150deg, green, red);
+}
+.four {
+    background: linear-gradient(to top left, green, red);
+}
+
+.five{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.9));
+}
+
+.six {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+}
+.img {
+    background: url(./images/think.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+/* 2nd part: img combined */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 60px;
+  color: tomato;
+}
+
+.banner {
+  background: url(./images/mt.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header {
+  background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(28, 8, 238, 0.5)),
+    url(./images/mt.jpg) center/cover fixed no-repeat;
+}
+
+
+

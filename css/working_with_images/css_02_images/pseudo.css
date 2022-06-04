@@ -1,0 +1,34 @@
+/* these before and after elements are displayed as inline by default hence they are in same line */
+
+p::before {
+  content: "hello ";
+  font-weight: bold;
+  background: black;
+  font-size: 2rem;
+  display: block;
+  color: rebeccapurple;
+}
+
+p::after {
+  content: "";
+
+  /* don't skip this content property, even if you don't want to add content, just write "" */
+  display: block;
+  background: black;
+  width: 50px;
+  height: 50px;
+}
+
+
+/* amazing examples and all about how to work with img and div */
+/* we see here that width 300px but img does not fit inside the div border so we did following to make it fit, display block helps to fill that void space at bottom */
+div{
+    width: 60vw;
+    margin: 100px auto;
+    border: 5px solid red;
+}
+/* % makes sure that image is responsive ie dependent on the div */
+img {
+    width: 100%;
+    display: block;
+}

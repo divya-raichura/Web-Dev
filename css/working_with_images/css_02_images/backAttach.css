@@ -1,0 +1,45 @@
+/* background attachment: fixed means bg image will stay be fix, but the text will be moving */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div {
+    min-height: 100vh;
+    color: green;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: center;
+}
+
+.big {
+    background: url('/css_02_images/fuji.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.small {
+    background: url('/css_02_images/images/galaxy.jpg');
+    border: 2px solid red;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.folder {
+    background: url('/css_02_images/fuji.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+

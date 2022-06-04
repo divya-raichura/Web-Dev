@@ -23,7 +23,7 @@ a{
     outline-width: 0.5rem;
     outline-style: solid;
     outline-color: blueviolet;
-    outline: 0.2rem solid white;
+    outline: 0.2rem solid black;
     outline-offset: 10px;
     outline-offset: -10px;  
     /* can't do this with borders */

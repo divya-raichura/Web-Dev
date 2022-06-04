@@ -1,0 +1,76 @@
+/* body {
+  background: tomato;
+}
+
+.banner {
+  background: rebeccapurple;
+}
+h1 {
+  color: wheat;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+@media screen and (min-height: 500px) {
+  body {
+    background: rgba(0, 0, 0, 0.9);
+  }
+  .banner {
+    background: rgb(255, 225, 0);
+  }
+  h1 {
+    color: tomato;
+    font-size: 60px;
+    text-decoration: wavy;
+  }
+}
+
+@media screen and (min-height: 600px) {
+  body {
+    background: rgba(255, 255, 255, 0.9);
+  }
+  .banner {
+    background: rgb(3, 88, 245);
+  }
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    text-decoration: wavy;
+  }
+} */
+
+/* if we write max width there instead of min, there there will be all kinds of overriding everywhere watch lecture from maybe 8.50hr for seeing that */
+
+
+
+/* next example */
+/* z index default value is 0 */
+img{
+    width: 100px;
+    position: absolute;
+    height: 100px;
+}
+.banner{
+    position: relative;
+    margin: 20px;
+    width: 80vw;
+    height: 70vh;
+    border: 5px solid rebeccapurple;
+}
+
+.one{
+    top: 0;
+    left: 0;
+}
+/* if we put top as static, z index will not work on it howmuch ever high or low we set it */
+.two{
+    top: 10%;
+    left: 10%;
+    z-index: 1;
+}
+.three{
+    top: 20%;
+    left: 20%;
+}
+
