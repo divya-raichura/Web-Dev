@@ -1,0 +1,96 @@
+/* 
+https://www.w3schools.com/css/css3_transitions.asp
+*/
+/*
+ property name | duration | easing function | delay 
+*/
+/* div{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: white;
+    margin: 15px;
+    transition: all 1s;
+}
+
+div:hover{
+    transform: translateX(100px);
+
+}
+
+.ease {
+    transition-timing-function: ease;
+}
+.linear {
+    transition-timing-function: linear;
+}
+.ease-in {
+    transition-timing-function: ease-in;
+}
+.ease-out {
+    transition-timing-function: ease-out;
+}
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+} */
+
+div {
+  width: 100px;
+  height: 100px;
+  color: white;
+  margin: 10px;
+}
+
+.transition {
+  background: red;
+  transition: all 1s linear;
+}
+
+.transition:hover {
+  transform: rotate(180deg);
+  width: 200px;
+  height: 200px;
+  background: rebeccapurple;
+}
+
+.animation {
+  background: blue;
+  /* animation-name: move;
+  animation-duration: 10s;
+  animation-iteration-count: 2; */
+
+  /* short */
+  /* animation: move 5s infinite; */
+  animation: move 5s 2;
+
+  /* infinite means it will animate continuously */
+  animation-fill-mode: forwards
+}
+/* 10s duration is related to below %
+50% keyframe means 50% of 10s which is 5s
+*/
+@keyframes move {
+  0% {
+    transform: translateX(20px);
+  }
+  25% {
+    transform: translateX(150px);
+    background: black;
+  }
+  50% {
+    transform: translateX(200px);
+    background: green;
+  }
+  75% {
+    background: yellow;
+    transform: rotate(180deg);
+  }
+  90% {
+    background: rgb(255, 0, 93);
+    transform: translateY(150px);
+  }
+  100% {
+    transform: translateX(240px);
+    background: rebeccapurple;
+  }
+}

@@ -10,25 +10,77 @@ p::before {
 }
 
 p::after {
-  content: "";
+  content: "as";
+  color: red;
+  font-weight: bold;
+  font-size: 3rem;
 
+  display: block;
+  background: black;
+}
+
+p::after {
+  content: "";
+  width: 50px;
+  height: 50px;
   /* don't skip this content property, even if you don't want to add content, just write "" */
   display: block;
   background: black;
-  width: 50px;
-  height: 50px;
 }
-
 
 /* amazing examples and all about how to work with img and div */
 /* we see here that width 300px but img does not fit inside the div border so we did following to make it fit, display block helps to fill that void space at bottom */
-div{
-    width: 60vw;
-    margin: 100px auto;
-    border: 5px solid red;
+div {
+  width: 50vw;
+  margin: 100px auto;
+  border: 5px solid red;
 }
 /* % makes sure that image is responsive ie dependent on the div */
 img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
+}
+
+/* in most cases we will have a img inside div and we will work with it and then set the img responsive to the div */
+
+/* we cannot add before and after to images so another reason why we work with img inside div so that we can use pseudo elements */
+/* img::before {
+
+} */
+div {
+  width: 50vw;
+  margin: 100px auto;
+  border: 5px solid red;
+  position: relative;
+}
+div::before {
+  content: "";
+  border: 5px solid rebeccapurple;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  top: -40px;
+  left: -40px;
+  transition: all 0.5s linear;
+  z-index: -2;
+}
+
+div::after {
+  content: "";
+  background: tomato;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  top: -20px;
+  left: -20px;
+  z-index: -2;
+  transition: all 0.5s linear;
+}
+
+div:hover::after,
+div:hover::before {
+  top: 0;
+  left: 0;
 }

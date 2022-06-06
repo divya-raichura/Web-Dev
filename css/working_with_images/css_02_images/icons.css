@@ -1,0 +1,28 @@
+/* font awesome icons */
+/* css shadow generator 1) text 2) box*/
+
+/* .fa-home{
+    color: tomato;
+}
+.social{
+    font-size: 4rem;
+    color: blue;
+} */
+
+/* 
+text shadow 
+box shadow
+*/
+
+h1 {
+  /* x y blur color*/
+  text-shadow: 1px 2px 3px blue;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  background: blue;
+  margin: 20px;
+  box-shadow: 30px 5px 1px green;
+}

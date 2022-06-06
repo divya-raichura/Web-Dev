@@ -1,0 +1,53 @@
+/* in the hover we define what changes to show 
+and in the selector we describe about the behaviours of the changes */
+
+/*
+
+transition: <property> <duration> <timing-function> <delay>;
+
+ */
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+.one {
+  background: red;
+}
+.two {
+  background: blue;
+}
+.three {
+  background: green;
+}
+
+/* div:hover {
+  background: rebeccapurple;
+}
+.three {
+  background: orange;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-delay: 1s;
+}
+.three:hover{
+    background: green;
+    border-radius: 50%;
+} */
+
+.three {
+  background: green;
+  transition-property: background;
+  transition-property: border-radius;
+  transition: background 1s 1s, border-radius 2s;
+}
+
+.three:hover {
+  background: coral;
+  border-radius: 50%;
+}
+
+
+

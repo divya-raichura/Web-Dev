@@ -1,60 +1,81 @@
 div {
-    height: 400px;
-    color: red;
+  height: 400px;
+  color: red;
 }
-.big{
-    background: url('/css_02_images/fuji.jfif');
+.big {
+  background: url("/css_02_images/fuji.jfif");
 }
 .folder {
-    background: url("/css_02_images/images/galaxy.jpg");
+  background: url("/css_02_images/images/galaxy.jpg");
 }
-.small{
-    background: url('/css_02_images/Smallfuji.jpg');
+.small {
+  background: url("/css_02_images/Smallfuji.jpg");
 }
 
 /* as we increase screen size, the image gets repeated no matter if it is small or big or etc, repeats more if small, less if big*/
 
-    /* round makes the image to not cut in between to fill space, it uses one img and if more space is there, it uses again that img but does not use it as half, uses both of em as full and decreases size */
+/* round makes the image to not cut in between to fill space, it uses one img and if more space is there, it uses again that img but does not use it as half, uses both of em as full and decreases size */
 
-    /* 
+/* 
     if we want to display full image we use repeat:round but if small is small, it repeats whole image
     so we use contain, so that only 1 img is used and it fills all space, but distorts image if size is not proper
     */
 
-    /* use size:cover and repeat: no repeat to use 1 img and fill all space with it, don't use repeat: round because it repeats image when whole image is used even if we use cover in cases like bg attachment*/
+/* use size:cover and repeat: no repeat to use 1 img and fill all space with it, don't use repeat: round because it repeats image when whole image is used even if we use cover in cases like bg attachment*/
 
-    /* background-size: cover; */
+/* background-size: cover; */
 /* what this does is it makes the one image to cover whole div no matter size of img, but obvi it will distort the img if it is small */
 
-
 .big {
-    background: url('/css_02_images/fuji.jfif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-repeat: round;
+  background: url("/css_02_images/fuji.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-repeat: round;
 }
 
 .folder {
-    background: url("/css_02_images/images/galaxy.jpg");
-    background-repeat: round;
-    /* background-size: cover; */
+  background: url("/css_02_images/images/galaxy.jpg");
+  background-repeat: round;
+  /* background-size: cover; */
 }
 
 .small {
-    background: url('/css_02_images/Smallfuji.jpg');
-    border: 5px solid green;
-    background-repeat: no-repeat;
+  background: url("/css_02_images/Smallfuji.jpg");
+  border: 5px solid green;
+  background-repeat: no-repeat;
 }
-
 
 .big {
-    background: url('/css_02_images/fuji.jfif');
-    background-size: cover;
-    background-position: center;
+  background: url("/css_02_images/fuji.jfif");
+  background-size: cover;
+  background-position: center;
 }
 .small {
-    background: url('/css_02_images/Smallfuji.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-position: 20% 30%; */
+  background: url("/css_02_images/Smallfuji.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-position: 20% 30%; */
+}
+*{
+  background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(28, 8, 238, 0.5));
+}
+a:link {
+  color: rgb(0, 255, 26);
+  font-size: 20px;
+  letter-spacing: 2px;
+  display: block;
+  margin: 0 6px;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(22, 1, 251);
+}
+
+a:hover {
+  background: black;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-decoration: underline;
+  color: tomato;
 }

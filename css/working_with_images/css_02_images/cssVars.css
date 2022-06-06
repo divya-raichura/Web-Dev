@@ -1,0 +1,54 @@
+/* 
+css var aka custom properties
+hold a value and reuse it
+--varName:value
+property:var(--varName)
+scope
+:root{} === global
+element === local
+any property
+*/
+
+/* 
+using css vars we can reuse the values so that if we want some values to be same we don't have to copy and paste every time we update og one, it will do auto in every page we use that var 
+*/
+
+/* .hd1{
+    color: red;
+}
+.para{
+    color: yellow;
+}
+
+.divpara{
+    color: blue;
+} */
+
+:root {
+  --primary: red;
+  --secon: blue;
+  --transn: all 0.4s linear;
+}
+
+.hd1 {
+  color: var(--primary);
+}
+
+.hd2 {
+  color: var(--primary);
+  transition: var(--transn);
+}
+
+.hd2:hover{
+    color: var(--secon);
+}
+
+/* we have local vars as well */
+
+div{
+    --localColor: aqua;
+}
+.divpara{
+    color: var(--localColor);
+}
+/* this local vars are only accessible to the childrens */

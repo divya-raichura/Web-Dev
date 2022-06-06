@@ -1,0 +1,24 @@
+html {
+  min-height: 100%;
+  background: linear-gradient(rgb(49, 183, 236), rgb(244, 117, 117));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+li {
+  list-style-type: none;
+}
+ul li a{
+  display: block;
+  transition: all;
+  color: black;
+}
+a:hover {
+  color: rgb(0, 255, 42);
+  background: rgb(243, 100, 198);
+  text-decoration: none;
+}
+a:visited {
+  color: red;
+}

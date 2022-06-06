@@ -17,7 +17,7 @@ div {
 }
 
 .big {
-    background: url('/css_02_images/fuji.jfif');
+    background: url('/css_02_images/images/fuji.jfif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@ div {
 
 
 .folder {
-    background: url('/css_02_images/fuji.jfif');
+    background: url('/css_02_images/images/mt.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
