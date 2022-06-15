@@ -1,0 +1,60 @@
+flex vs grid
+- use grid for overall layout and flex for aligning inner elements
+
+container properties
+- grid template columns
+- grid template rows
+- grid gap
+- grid auto rows
+- grid auto columns
+- grid template area
+- justify content
+- align items
+
+grid item properties
+- grid column
+- grid row
+- grid- area
+- justify self
+- align self
+
+
+grid template columns
+- 100px 200px this gives two columns of 100 and 200px
+- 100px 200px 300px this gives three columns of 100 200 and 300px
+- % also works
+- 1fr 1fr 1fr means 3 columns of same width and entire width of whole block is the width of container
+- repeat(3,1fr) means make 3 cols of 1fr each same as above
+- column-gap and row-gap means gap between them
+- both together can be used as gap:10px
+
+
+
+NOTE on height
+! for template column
+-  it is initially dependent on the amount of content, if content in 2nd box of 1st row is more, its height will be more and so heights of all boxes in row 1 will also be same
+! for template rows
+- height in this case for all boxes, will be of the box having largest amount of content 
+
+align items
+- for container
+- stretch is default, this implies the all boxes of a row will have a size according to the laregest box of that row
+- start, this will change above behaviour, other boxes will not stretch and will stick to top of grid, for end at the end, and center for center
+- start end center will be true for all boxes if we have auto rows: minimax() property
+
+
+justify content
+- move horizontally, space around, etc same like flexbox
+
+span individual boxes across rows
+    grid-column-start: 1;
+    grid-column-end: 3;
+    or
+    grid-column: 1/3;
+    or
+    grid-column: 1 / span 2;
+all will do same thing
+
+Note: this 3 is according to the number of the line shown in dev tools
+
+

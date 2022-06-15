@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: #f5f5f5;
+}
+.item {
+  background: steelblue;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  border: skyblue 1px solid;
+}
+.container {
+  max-width: 960px;
+  margin: 100px auto;
+  padding: 10px;
+  display: grid;
+  /* nothing happens because we need to specify how many rows and columns we want */
+  /* grid-template-columns: 100px 200px; */
+  /* grid-template-columns: 30% 40% 30%; */
+  /* grid-template-columns: 1fr 1fr 2fr; */
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+
+/* till now we saw about width, the height was same for all cause height depended on content and content was same */
+
+/* if we put more content in box 1 then its height will increase and all boxes in same row of box 1 will have same height */
+
+  /* grid-auto-rows: 200px; */
+  /* makes height as 200 regardless of the size of content, content cuts off if size is more */
+
+  /* grid-auto-rows: minmax(200px, auto); */
+  /* as per name suggests, first is min and second max, min height will be 200 but max depends upon content and all boxes in that row will have height of largest box of that row */
+
+  /* grid-template-rows: 200px 100px 200px; */
+  /* 1st row will be 200 2nd 100 and 3rd 200 */
+
+
+  /* grid-template-rows: repeat(3,1fr); */
+  /* all boxes will have height of the box which has max size*/
+  
+  /* align-items: stretch; */
+
+  /* we can wrap grid boxes just like we have flex:wrap */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+/* autofill means it will fill max amount of boxes in a row according to the width, other boxes in next row and so on and minmax means min size will be 200px, if screen dec below it, they will be wrapped and cols no dec*/
+}
+
+
+/* .item:nth-of-type(2) {
+  height: 100px;
+  width: 100px;
+
+  align-self: center;
+  justify-self: center;
+} */
+
+
+/* spanning boxex across rows and columns */
+/* .item:nth-of-type(1){
+    background: #000;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-column: 1/3;
+    grid-column: 1 / span 2;
+} */
+
+/* .item:nth-of-type(3){
+    background: #333;
+    grid-row: 2/4;
+
+} */
+
+/* responsiveness */
+@media (max-width:500px){
+  .container{
+     /* grid-template-columns: repeat(1,1fr); */
+     /* same as above, all boxes will stack*/
+     grid-template-columns: 1fr;
+  }
+}
+
+

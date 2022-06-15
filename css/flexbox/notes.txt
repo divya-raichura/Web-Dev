@@ -1,0 +1,62 @@
+* flex container properties *
+
+direction
+wrap
+justify content
+align items
+align content
+
+* flex item properties *
+
+order 
+flex grow
+flex shrink
+flex basis
+align self
+
+* axes *
+
+- direction row :
+main axis = horizontal
+cross axis = vertical
+
+- direction column :
+main axis = vertical
+cross axis = horizontal
+
+
+* working of justify v/s align *
+
+- justify content is for moving items across main axis
+
+- align items for moving them across cross axis
+
+- .item:nth-of-type(1){
+    align-self: end;
+} for aligning a particular item, or we can create individual class instead
+
+- if we have diection column then also same, remem in this case main axis becomes vertical so justify will move items vertically and cross is horizonal so it will move items horizontally in case of *column*
+
+
+* WRAP *
+- if a box (item) can't in the same row, it increase height of container and places that box below, in next line
+
+*change order of item boxes*
+- .item:nth-of-type(1){
+    order: 2;
+}
+
+* FLEX BASIS *
+- it is same as width if we dont have grow or shrink
+- ie it is the width when starting with a screen size when we have grow or shrink
+- grow and shrink means when we increase size of scree, at what rate the item boxes's widths will increase
+- also, flex basis means it will not decrease width beyond this size when we shrink screen
+- default flex grow is 0 and flex grow is the property of items not flex container
+
+IMP NOTES:
+-  flex: 1 0 100px
+this is shorthand for grow shrink basis
+- lot of times we dont have basis
+so flex 1 0 0 which can written also as
+flex: 1;
+by using this, all the boxes will take the entire space evenly

@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
+}
+
+.box1 {
+  /* we set width and height as 100 but if we see div in tools it says as 160*160
+  this is because it adds height + 2*padding + 2*border
+  NOTE: margin does not count
+   */
+
+   /* 
+   if we want to change this so that the height and width of our element is the actual one that we have set, we use box sizing
+   */
+  background: rgb(226, 66, 66);
+  padding: 20px;
+  border: 10px solid plum;
+  margin: 40px;
+  height: 100px;
+  width: 100px;
+}
+.box2 {
+  background: rgb(75, 75, 225);
+  padding: 20px;
+  border: 10px solid plum;
+  margin: 20px;
+  height: 100px;
+  width: 100px;
+}
+
+.box1 {
+  /* we set width and height as 100 but if we see div in tools it says as 160*160
+  this is because it adds height + 2*padding + 2*border
+  NOTE: margin does not count
+   */
+
+   /* 
+   if we want to change this so that the height and width of our element is the actual one that we have set, we use box sizing
+   */
+  background: rgb(226, 66, 66);
+  padding: 20px;
+  border: 10px solid plum;
+  margin: 40px;
+  height: 100px;
+  width: 100px;
+  /* box-sizing: border-box; */
+  /* using border box, our content size was decreased from 100*100 to 40*40 so that now, the element's actual h and w are 100*100
+  as now it subtracts padding and border from h and w so that 100 - 2*20 - 2*10 = 100 - 40 - 20 = 40px hence now content size is 40*40 */
+}

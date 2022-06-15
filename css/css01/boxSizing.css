@@ -6,7 +6,7 @@
 
 .box1 {
     background: red;
-    padding: 50px;
+    padding: 60px;
     box-sizing: border-box;
 }
 
@@ -17,8 +17,16 @@
 .box3 {
     padding: 60px;
     background: green;
+    /* box-sizing: border-box; */
 }
 
 /* border box applies padding inside
 the default one adds up padding and border outside
+*/
+
+/* again, so what it does is 
+it helps us to keep the div size what we defined as 
+here it is 200*200 so border box will keep div size this always by adding padding and border inside content
+
+without border box, the content box is 200*200 and padding and border are added to it so that the div box size keeps increasing but with border box, div size remains the same
 */

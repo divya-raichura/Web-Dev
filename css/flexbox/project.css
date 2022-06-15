@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #a1c3ff;
+}
+img {
+  max-width: 100%;
+}
+h1,
+h2 {
+  margin-bottom: 15px;
+}
+.container {
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+.navbar {
+  background: #376bc4;
+  color: white;
+  height: 60px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: aqua;
+}
+/* cannot make nav as the flex container as flex items are the immediate childs of flex container so to make ul and logo as items, we need to make container as the flex container so that logo and ul are the two items*/
+.navbar .container {
+  height: 100%;
+  /* add height 100% so that it takes 100% height wrt it's parent which is navbar so that align items can work and everything is placed in the middle */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* we will make ul also as flex as we want all li to align horizontally */
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 30px;
+}
+
+.header {
+  background: rgb(49, 51, 151);
+  color: white;
+  min-height: 400px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  /* when we decrease size, the distance between 'learning' and 'flexbox' is significant, hence following, we have set it 1.5 in body*/
+  line-height: 1.2;
+}
+.header img {
+  max-width: 400px;
+}
+
+/* now, header has a container which has description div and img so two items */
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* if we decrease screen size, we see that it is not responsive yet, ie, img goes out of the visible screen */
+
+.boxes .container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: stretch; */
+  /* stretch for all of em having same box sizes, it is by default, so no need to put it */
+}
+
+.boxes .box {
+  flex: 1;
+  background: rgb(87, 129, 208);
+  color: white;
+  border-radius: 20px;
+  margin: 10px 20px;
+  box-shadow: 10px 3px 5px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 10px;
+}
+
+.boxes i {
+  margin-right: 10px;
+}
+
+/* that bracket means, if this condition is true then this code will run */
+/* max width means iske upar gaya agar value toh media code wil NOT run */
+@media (max-width: 668px) {
+  /* when we decrease screen size,img and 3 boxes in section are going out of screen if we push screen to collapse on right, for left, text and section's first box will be out */
+
+  /* in order to avoid this and stack content when screen size shrinked, we have two methods */
+
+  /* 1) display block
+       2) flex direction: column */
+  .header .container {
+    /* color: red; */
+    /* display: block; */
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .boxes .container {
+    display: block;
+    text-align: center;
+  }
+}

@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Defaults
+- direction: row
+- we style layouts based on (wrt) main and cross axes 
+- justify content : flex start
+- align items : stretch
+
+*/
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* working of justify v/s align
+
+- justify content is for moving items across main axis
+
+- align items for moving them across cross axis
+
+- .item:nth-of-type(1){
+    align-self: end;
+} for aligning a particular item, or we can create individual class instead
+
+- if we have diection column then also same, remem in this case main axis becomes vertical so justify will move items vertically and cross is horizonal so it will move items horizontally in case of *column* */
+
+
+
+
+.flex-container{
+    height: 400px;
+    display: flex;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    /* flex: 1 0 0; same as below*/
+    /* flex:1; */
+    /* flex-basis: 400px; */
+    flex-grow: 1;
+    /* width: 300px; */
+    height: 100px;
+    background: skyblue;
+    color: darkorchid;
+    margin: 10px;
+}
+
+/* what if want to centre the text inside the item div as well, we can do same, make item as flex and do the following */
+
+.item-1{
+    display: flex;
+    justify-content: center;
+    flex-basis: 400px;
+    align-items: center;
+}
+/* .item-2{
+    
+}
+.item-3{
+
+} */
+

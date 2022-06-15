@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  /* if we dont put this height, it will not take entire page when we write grid */
+  display: grid;
+
+  /* template areas is the text representation of how we want our layout */
+  /* note that the names can be different, need not to be same as the tags, but its good to be specific */
+  grid-template-areas:
+    "header header header"
+    "nav content sidebar"
+    "nav footer footer";
+
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 80px 1fr 70px;
+    /* this means 1st row will be 80px 3rd row 70px and remaining will be 2nd row */
+}
+
+header,
+footer,
+main,
+aside,
+nav {
+  background: steelblue;
+  color: white;
+  padding: 20px;
+  border: skyblue 1px solid;
+}
+
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: content;
+}
+aside{
+    grid-area: sidebar;
+}
+footer{
+    grid-area: footer;
+}

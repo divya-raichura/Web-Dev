@@ -1,3 +1,11 @@
+/* media queries:-
+min width == starting from this value there will be changes acc to code written in mediaQ
+
+
+max width == up to this value mediaQ code will run
+
+*/
+
 /* body {
   background: tomato;
 }
@@ -42,35 +50,32 @@ h1 {
 
 /* if we write max width there instead of min, there there will be all kinds of overriding everywhere watch lecture from maybe 8.50hr for seeing that */
 
-
-
 /* next example */
 /* z index default value is 0 */
-img{
-    width: 100px;
-    position: absolute;
-    height: 100px;
+img {
+  width: 100px;
+  position: absolute;
+  height: 100px;
 }
-.banner{
-    position: relative;
-    margin: 20px;
-    width: 80vw;
-    height: 70vh;
-    border: 5px solid rebeccapurple;
+.banner {
+  position: relative;
+  margin: 20px;
+  width: 80vw;
+  height: 70vh;
+  border: 5px solid rebeccapurple;
 }
 
-.one{
-    top: 0;
-    left: 0;
+.one {
+  top: 0;
+  left: 0;
 }
 /* if we put top as static, z index will not work on it howmuch ever high or low we set it */
-.two{
-    top: 10%;
-    left: 10%;
-    z-index: 1;
+.two {
+  top: 10%;
+  left: 10%;
+  z-index: 1;
 }
-.three{
-    top: 20%;
-    left: 20%;
+.three {
+  top: 20%;
+  left: 20%;
 }
-
