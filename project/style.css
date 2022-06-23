@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+/* root means this can be used anywhere */
+:root {
+  --primary-color: #047aed;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  /* so that even if img is large, it will not burst out of it's container */
+  width: 100%;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+
+  height: 70px;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+/* showcase */
+
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #fff;
+  /* if we want to position anything absolute to showcase, so we use relative here */
+  position: relative;
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcase p {
+  margin: 20px 0;
+}
+
+.showcase .grid {
+  overflow: visible;
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  /* horiOffset vertiOffset blue color */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+
+.showcase-form {
+  position: relative;
+  /* pushes down 60px */
+  top: 60px;
+  /* this height will give us a scroll bar cause we put overflow auto in container, to remove this we put overflow visible in showcase grid */
+  height: 350px;
+  padding: 40px;
+  /* so that when we add animation, it always remains in front */
+  z-index: 100;
+  /* justify-self: flex-end; */
+}
+.showcase .form-control {
+  margin: 30px 0;
+}
+/* we put button also as input and we dont want to select it hence we specify in brackets wat to select */
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+/* when we click the input to write info, we get ugly border Hence we do following*/
+.showcase-form input:focus {
+  outline: none;
+}
+
+.showcase-form h2 {
+  padding: 10px 0;
+}
+
+/* Stats */
+.stats {
+  padding-top: 100px;
+  animation: slideInFromBottom 1s ease-in;
+}
+
+.stats-heading {
+  max-width: 500px;
+  margin: auto;
+}
+
+.stats .grid h3 {
+  font-size: 35px;
+}
+
+.stats .grid p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Cli */
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.cli .grid > *:first-child {
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
