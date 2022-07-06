@@ -1,0 +1,18 @@
+function makeWorker() {
+  let name = "Pete";
+
+  return function () {
+    alert(name);
+  };
+}
+
+let name = "John";
+
+// create a function
+let work = makeWorker();
+
+// call it
+work(); // what will it show?
+
+// for ans see q2
+// https://javascript.info/closure#garbage-collection
