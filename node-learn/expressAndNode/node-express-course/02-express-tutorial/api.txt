@@ -1,0 +1,9 @@
+in express or http case when we say api
+we mean setting an http interface for sending data
+
+data is send using json
+res.json() is used
+
+ssr means we setup templates and send html/css/js by overselves using res.render()
+
+with api our server provides data and any frontend app can perform http request and using the data setup the api and functionality
