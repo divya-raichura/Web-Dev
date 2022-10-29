@@ -1,8 +1,0 @@
-0,0 is the upper left side co ordinate in canvas
-so suppose we have triangle(0,0,50,50)
-hence we increase x, then it goes to right
-we increase y, then it goes down
-
-so bascially
-x axis is according to maths
-but y axis is opposite, -ve y axis is above and +ve y axis is downwards

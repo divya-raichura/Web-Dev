@@ -1,0 +1,36 @@
+db.collectionName.insertOne({})
+db.collectionName.insertMany([{}, {}])
+
+
+db.collectionName.find({write key value of field we want in that document}, {this is second argument which says what fields do we want from that document to be displayed so that we don't display entire document})
+
+
+find books with rating equal to 8
+db.collectionName.find({rating : 8})
+
+find books with rating less than equal to 8
+db.collectionName.find({rating : {$lte : 8}})
+
+find books with rating equal to 7 OR 8
+db.collectionName.find({$or : [{rating:7},{rating:8}]})
+
+find books with rating equal to 7 OR author James
+db.collectionName.find({$or : [{rating:7},{author:James}]})
+
+find books with pages less than 300 OR pages greater than 500
+db.collectionName.find({$or : [{pages: {$lt:300}},{pages:{$gt:500}}]})
+
+find books with rating 7 or 8 or 9
+.find({rating : {$in : [7,8,9]}})
+or
+.find({$or : [{rating:7}, {rating:8}, {rating:9}]})
+
+suppose in db in book collection we have genre attribute which is array of genres
+now...
+..find(genre: "scifi") gives books having scifi as one of the elements in array of genre
+..find(genre:["scifi"]) will give books having only scifi in genre
+..find(genre:{$all:["scifi","magic"]}) this gives book having scifi and magic compulsory in genre, baki genres ho na ho does not matter, ye dono hone chahiye bas   
+
+suppose similar situation like above but genre is reviews and every element in review is object like this {name:"x",age:20}
+..find({"reviews.name":"x"})
+

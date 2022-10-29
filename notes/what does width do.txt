@@ -1,3 +1,0 @@
-spans the element across the screen 
-no width implies puri jagah lait jayega aur padding lagayege toh pura lait jayega wo bhi
-width 120px matlab chotu sa jagah aur wohi pe ayega padding

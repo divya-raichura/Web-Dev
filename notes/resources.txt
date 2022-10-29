@@ -1,4 +1,0 @@
-- mdn web docs
-- font awesome icons
-- pexels
-- css gradients
